@@ -1,8 +1,32 @@
 <!DOCTYPE html>
+<html>
 <head>
-
+    <meta charset="utf-8" />
+    <title>Hello STEP</title>
 </head>
 <body>
-    1234
+   <div id="app"></div>    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    var root = ReactDOM.createRoot(document.getElementById("app"));
+    function F1(){
+        return <h2>qwerty</h2>
+    }
+
+    class F2 extends React.Component {
+    render() {
+        return <h2>qwerty1234</h2>;
+    }
+    }
+
+    root.render(
+            <div>привет STEP 1234
+                <F1/>
+                <F2/>
+            </div>
+        );
+   </script>
 </body>
 </html>
